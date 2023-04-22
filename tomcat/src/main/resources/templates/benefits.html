@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Benefits Template</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Benefits</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Benefit Number</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="benefit : ${benefits}">
+        <td th:text="${benefit.getId()}"></td>
+        <td th:text="${benefit.getNumBeneficio()}"></td>
+        <td th:text="${benefit.getNombre()}"></td>
+        <td th:text="${benefit.getDescripcion()}"></td>
+        <td th:text="${benefit.getTipo()}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

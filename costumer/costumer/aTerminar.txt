@@ -1,0 +1,46 @@
+- hacer jar
+- hacer ejecutable tamb desde front
+
+- armar archivo de presentacion con los tests
+
+---------------------------------
+JSON
+
+{
+    "dni": "${__RandomString(8,1234567890,)}",
+    "firstName": "aaab",
+    "age": 22,
+    "datebirth": "dd-mm-aaaa",
+    "email": "aaa@bb.com",
+    "phone": "11 2223 3333"
+}
+
+
+{
+    "dni":"${__Random(0,1000000)}",
+    "firstName": "${__RandomString(6,abcdefghijklmnopqrstuvwxyz,)}",
+    "age": "${__Random(0,100)}",
+    "datebirth": "dd-mm-aaaa",
+    "email": "aaa@bb.com",
+    "phone": "11 2223 3333"
+}
+
+Consulta: 
+ver el front
+
+EXPLICAR POR QUE TIENE LOS METODOS EL COSTUMER SERVICE IMPL
+
+
+CAMBIOS:
+	- manejo de errores globales con request estandarizado y mensaje personalizado
+	- validacion de campos
+	- validacion de existencia del registro a interactuar separada por capas
+	- get paginable y que puede ordenarse
+	- manejo de nombres para la api
+	- hacer jar
+	- pagebale con sort
+	- pageable con sort y fitros
+	- search hecho con @Query
+	- configuracion del cors por que por mas que tenga @CrossOrigin al hacer muchas peticiones desde front me las bloqueaba
+	
+

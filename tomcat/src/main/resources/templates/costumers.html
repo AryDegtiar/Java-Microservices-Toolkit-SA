@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Costumers</title>
+</head>
+<body>
+<script th:inline="javascript">
+    /* Log the contents of the costumers array in the console */
+    console.log([[${costumers}]]);
+</script>
+<h1>Lista de Costumers</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>DNI</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Fecha de Nacimiento</th>
+        <th>Email</th>
+        <th>Teléfono</th>
+    </tr>
+    <tr th:each="costumer : ${costumers}">
+        <td th:text="${costumer.id}"></td>
+        <td th:text="${costumer.dni}"></td>
+        <td th:text="${costumer.firstName}"></td>
+        <td th:text="${costumer.age}"></td>
+        <td th:text="${costumer.datebirth}"></td>
+        <td th:text="${costumer.email}"></td>
+        <td th:text="${costumer.phone}"></td>
+    </tr>
+</table>
+</body>
+</html>
