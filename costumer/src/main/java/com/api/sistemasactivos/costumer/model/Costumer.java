@@ -13,7 +13,7 @@ import java.util.Date;
 
 @Getter @Setter
 @Entity
-@Table(name = "costumers")
+@Table(name = "costumer")
 public class Costumer extends Base {
     @NotNull(message = "El dni no puede estar vacío")
     private Integer dni;
