@@ -21,6 +21,6 @@ public class DataMonitoring extends Base {
     private String baseUnit;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "data_monitoring_id")
+    //@JoinColumn(name = "data_monitoring_id")
     private List<Measurement> measurements;
 }
